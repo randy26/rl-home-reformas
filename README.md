@@ -1,111 +1,34 @@
-# RL Home & Reformas
+# RL Home & Reformas — V2
 
-Primera versión de un sitio de afiliados para productos de reformas, hogar, bricolaje y jardín.
+Sitio React + Vite preparado para GitHub Pages.
 
-## Requisitos
-
-- Node.js 20+
-- Git
-- Una cuenta de GitHub
-
-## Ejecutar localmente
+## Publicación
 
 ```bash
 npm install
-npm run dev
-```
-
-Abrir la URL que muestre Vite, normalmente:
-
-http://localhost:5173
-
-## Cambiar los enlaces de Awin
-
-Abre:
-
-`src/main.jsx`
-
-Busca:
-
-`affiliateUrl`
-
-y reemplaza cada URL de ejemplo por el enlace de tracking que te entregue Awin.
-
-Importante: conserva `rel="nofollow sponsored noopener noreferrer"` en los enlaces de afiliado.
-
-## Cambiar productos
-
-Los productos de demostración están al comienzo de `src/main.jsx`, dentro del array `products`.
-
-Puedes modificar:
-
-- name
-- category
-- store
-- price
-- oldPrice
-- discount
-- image
-- affiliateUrl
-
-## Publicar en GitHub Pages
-
-1. Crea un repositorio, por ejemplo:
-
-`rl-home-reformas`
-
-2. Sube todo el contenido de esta carpeta.
-
-3. Instala dependencias:
-
-```bash
-npm install
-```
-
-4. Comprueba que `vite.config.js` tenga:
-
-```js
-base: "/rl-home-reformas/"
-```
-
-Si el repositorio tiene otro nombre, cambia esa ruta.
-
-5. Genera la versión de producción:
-
-```bash
-npm run build
-```
-
-6. Para publicar usando el paquete `gh-pages`:
-
-```bash
 npm run deploy
 ```
 
-7. En GitHub entra en:
+GitHub Pages debe publicar la rama `gh-pages` en `/ (root)`.
 
-Settings → Pages
+## Enlaces de afiliación
 
-y comprueba que GitHub Pages esté configurado.
+Los productos de `src/products.js` contienen marcadores de ejemplo:
 
-## Dominio personalizado
-
-Si posteriormente utilizas un dominio como:
-
-`reformaoferta.es`
-
-cambia en `vite.config.js`:
-
-```js
-base: "/"
+```text
+TU_ENLACE_AWIN
+TU_ID
 ```
 
-Después configura el dominio personalizado en GitHub Pages y sus registros DNS.
+Sustituye cada `affiliateUrl` por el enlace completo generado por Awin Link Builder cuando tengas la campaña/programa aprobado.
 
-## Nota legal de afiliación
+## Antes de publicar una versión comercial
 
-Añade una página de aviso de afiliados, privacidad, cookies y condiciones de uso antes de hacer campañas comerciales. Las condiciones exactas dependen de los países y programas de afiliación que utilices.
+1. Sustituir los productos de ejemplo por productos reales.
+2. Completar precios/stock únicamente con información vigente.
+3. Sustituir el texto de contacto por un canal real.
+4. Completar los datos del titular en Aviso Legal.
+5. Adaptar Privacidad y Cookies a las herramientas realmente instaladas.
+6. Revisar que cada enlace de afiliado funcione.
 
-## Imágenes
-
-Las imágenes de demostración utilizan URLs externas de Unsplash. Para producción conviene utilizar imágenes para las que tengas derechos de uso o las proporcionadas por los programas de afiliación cuando sus condiciones lo permitan.
+La web identifica los enlaces como `nofollow sponsored` y muestra una explicación de afiliación.

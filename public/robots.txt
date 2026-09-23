@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://randy26.github.io/rl-home-reformas/sitemap.xml

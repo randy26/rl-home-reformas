@@ -1,31 +1,21 @@
-# RL Home & Reformas — versión monetización 24/7
+# RL Home & Reformas — V3 editorial
 
-Esta versión añade:
-- Asesor de reforma y calculadora orientativa que funciona en el navegador 24/7.
-- Lista de compra persistente con `localStorage`.
-- Favoritos persistentes.
-- Botones de salida hacia enlaces de afiliación.
-- Captación de leads para conectar con email/CRM.
-- Botones de compartir por WhatsApp/Facebook y Web Share.
-- SEO básico y datos estructurados.
-- Bloques de transparencia de afiliación.
-
-## IMPORTANTE antes de publicar
-1. En `src/products.js`, reemplaza todos los `TU_ENLACE_AWIN` por URLs reales creadas en Awin.
-2. Cambia `CONTACT_EMAIL` en `src/main.jsx`.
-3. Cambia `WHATSAPP` por tu número real.
-4. Completa aviso legal, privacidad y cookies según las herramientas que realmente uses.
-5. No publiques precios/stock inventados: usa datos actuales de la tienda.
-6. GitHub Pages es hosting estático. La función de “asesor” incluida es una calculadora/recomendador local; **no expone una API key de IA**. Para IA generativa real (OpenAI/Gemini) hace falta un backend/serverless que mantenga la clave privada.
-7. Una compra afiliada se paga en la tienda colaboradora; la “lista” de esta web no es un carrito de checkout propio.
+Versión orientada a programas de afiliación de hogar y reformas: prioriza contenido útil, guías de proyecto y contextualización de productos.
 
 ## Publicación
+
 ```bash
 npm install
 npm run build
 npm run deploy
 ```
 
-## Siguiente nivel de monetización
-Conecta el formulario a un CRM/email y añade Analytics/Google Search Console cuando tengas listas las políticas correspondientes. Después puedes crear contenido SEO y distribuirlo en redes para alimentar el embudo:
-tráfico → asesor → productos → clic afiliado → compra / lead.
+## Antes de solicitar afiliación
+
+1. Completar titular, contacto y textos legales reales.
+2. Sustituir productos de ejemplo por productos y enlaces comerciales reales cuando corresponda.
+3. Revisar cada enlace de afiliado y añadir el atributo `sponsored`.
+4. Mantener precios y promociones únicamente si son datos vigentes.
+5. Publicar contenido editorial propio y mantenerlo actualizado.
+6. No utilizar términos de cupones, códigos promocionales o cashback para Leroy Merlin si el programa no los admite.
+7. Identificar claramente que RL Home & Reformas es un sitio independiente y no Leroy Merlin.

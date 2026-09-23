@@ -1,34 +1,31 @@
-# RL Home & Reformas — V2
+# RL Home & Reformas — versión monetización 24/7
 
-Sitio React + Vite preparado para GitHub Pages.
+Esta versión añade:
+- Asesor de reforma y calculadora orientativa que funciona en el navegador 24/7.
+- Lista de compra persistente con `localStorage`.
+- Favoritos persistentes.
+- Botones de salida hacia enlaces de afiliación.
+- Captación de leads para conectar con email/CRM.
+- Botones de compartir por WhatsApp/Facebook y Web Share.
+- SEO básico y datos estructurados.
+- Bloques de transparencia de afiliación.
+
+## IMPORTANTE antes de publicar
+1. En `src/products.js`, reemplaza todos los `TU_ENLACE_AWIN` por URLs reales creadas en Awin.
+2. Cambia `CONTACT_EMAIL` en `src/main.jsx`.
+3. Cambia `WHATSAPP` por tu número real.
+4. Completa aviso legal, privacidad y cookies según las herramientas que realmente uses.
+5. No publiques precios/stock inventados: usa datos actuales de la tienda.
+6. GitHub Pages es hosting estático. La función de “asesor” incluida es una calculadora/recomendador local; **no expone una API key de IA**. Para IA generativa real (OpenAI/Gemini) hace falta un backend/serverless que mantenga la clave privada.
+7. Una compra afiliada se paga en la tienda colaboradora; la “lista” de esta web no es un carrito de checkout propio.
 
 ## Publicación
-
 ```bash
 npm install
+npm run build
 npm run deploy
 ```
 
-GitHub Pages debe publicar la rama `gh-pages` en `/ (root)`.
-
-## Enlaces de afiliación
-
-Los productos de `src/products.js` contienen marcadores de ejemplo:
-
-```text
-TU_ENLACE_AWIN
-TU_ID
-```
-
-Sustituye cada `affiliateUrl` por el enlace completo generado por Awin Link Builder cuando tengas la campaña/programa aprobado.
-
-## Antes de publicar una versión comercial
-
-1. Sustituir los productos de ejemplo por productos reales.
-2. Completar precios/stock únicamente con información vigente.
-3. Sustituir el texto de contacto por un canal real.
-4. Completar los datos del titular en Aviso Legal.
-5. Adaptar Privacidad y Cookies a las herramientas realmente instaladas.
-6. Revisar que cada enlace de afiliado funcione.
-
-La web identifica los enlaces como `nofollow sponsored` y muestra una explicación de afiliación.
+## Siguiente nivel de monetización
+Conecta el formulario a un CRM/email y añade Analytics/Google Search Console cuando tengas listas las políticas correspondientes. Después puedes crear contenido SEO y distribuirlo en redes para alimentar el embudo:
+tráfico → asesor → productos → clic afiliado → compra / lead.

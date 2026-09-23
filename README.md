@@ -12,7 +12,7 @@ npm run deploy
 
 ## Antes de solicitar afiliación
 
-1. Completar titular, contacto y textos legales reales.
+1. Titular y contacto incorporados: Randy Paredes Lecca · randylecca86@gmail.com. Si vas a operar comercialmente en España, completa también los datos legales/fiscales que correspondan.
 2. Sustituir productos de ejemplo por productos y enlaces comerciales reales cuando corresponda.
 3. Revisar cada enlace de afiliado y añadir el atributo `sponsored`.
 4. Mantener precios y promociones únicamente si son datos vigentes.
